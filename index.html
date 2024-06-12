@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas</h1>
+        <div class="input-group">
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="trabalho">Nota do Trabalho:</label>
+            <input type="number" id="trabalho" step="0.01">
+        </div>
+        <div class="input-group" id="pre_p3_group" style="display: none;">
+            <label for="pre_p3">Nota da Pré P3:</label>
+            <input type="number" id="pre_p3" step="0.01">
+        </div>
+        <div class="input-group" id="nota3_group" style="display: none;">
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" step="0.01">
+        </div>
+        <button onclick="calcularNota()">Calcular</button>
+        <button id="recalcular" style="display: none;" onclick="calcularNotaFinal()">Recalcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
